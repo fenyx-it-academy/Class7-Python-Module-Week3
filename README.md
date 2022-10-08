@@ -29,4 +29,4 @@
 - Create separate functions for all the steps.
 - Modularize your code (either create a separate file for each function or create a file called `utils.py` and store all the functions in this file)
 - Wrap the necessary parts of your functions in try/except blocks.
-- Create a `requirements.txt` file at the end of your project to store all the dependancy information.
+- Create a `requirements.txt` file at the end of your project to store all the dependancy information. (`pip freeze > requirements.txt`)
