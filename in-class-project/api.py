@@ -20,4 +20,3 @@ def make_api_call(currency):
     else:
         result_obj = res.json()
         return result_obj
-    
