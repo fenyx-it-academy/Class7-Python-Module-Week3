@@ -6,7 +6,7 @@
 ## Steps to follow:
 #### Create an API function:
 - Import necessary library for making an API call.
-- Make the API call to this URL -> `http://jsonplaceholder.typicode.com/users`
+- Make the API call to this URL -> `http://jsonplacehoclelder.typicode.com/users`
 - Check the status code, return object (res.json())
 - Wrap the API function in try/except block.
 - Return the return object.
