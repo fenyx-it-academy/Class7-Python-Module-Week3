@@ -1,0 +1,31 @@
+import json
+import requests
+def user_code():
+    """This application takes integer digit starging from zero
+
+    Returns:
+       based on the digit entered by the user it  displays inidvidual user's profile
+    """
+    x=int(input('enter a an integer nuber starting from zero '))
+    return x
+def get_api():
+    r=requests.get('https://jsonplaceholder.typicode.com/users')
+    return r
+def clean_up(r,x):
+    r1=r.json()
+    print(type(r1))
+    res=dict()
+    for idx, val in enumerate(r1):
+        res[idx] = val
+    new={'user_id':res[x]['id'],'name':res[x]['name'], 'user_name':res[x]['username'],'email':res[x]['email']}
+    print(new)
+def save_to_file(new):
+    with open(f'{newfile}','w') as f:
+        B=json.dump(new,f)
+def main():
+    user=user_code()
+    api=get_api()
+    clean=clean_up(api,user)
+    save=save_to_file(clean)
+main()
+    
